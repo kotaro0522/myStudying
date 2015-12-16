@@ -23,7 +23,7 @@ int main(void){
                         goto next;
                     }
                     if(M==My+1&&M==Mx/2+1){
-                        printf("%d %d",Ny,Nx);
+                        printf("%d %d",Ny,Nx/2);
                         goto end;
                     }
                 }
