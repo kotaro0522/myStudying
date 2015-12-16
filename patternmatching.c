@@ -14,8 +14,8 @@ int main(void){
     }
 
     for(int Ny=0;Ny<N-M+1;Ny++){
-        int y=Ny;
         for(int Nx=0;Nx<(N-M+1)*2;Nx+=2){
+            int y=Ny;
             for(int My=0;My<M;My++,y++){
                 int x=Nx;
                 for(int Mx=0;Mx<M*2;Mx+=2,x+=2){
