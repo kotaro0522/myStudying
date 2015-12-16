@@ -14,24 +14,23 @@ int main(void){
     }
 
     for(int Ny=0;Ny<N-M+1;Ny++){
-    next:
         int y=Ny;
         for(int Nx=0;Nx<(N-M+1)*2;Nx+=2){
-            int x=Nx;
             for(int My=0;My<M;My++,y++){
-                x=Nx;
+                int x=Nx;
                 for(int Mx=0;Mx<M*2;Mx+=2,x+=2){
                     if(Nmap[y][x] != Mmap[My][Mx]){
                         goto next;
                     }
                     if(M==My+1&&M==Mx/2+1){
                         printf("%d %d",Ny,Nx);
+                        goto end;
                     }
                 }
             }
-            
+        next:;    
         }
     }
-
+end:
     return 0;
 }
