@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void){
     int N,M;
-    char Nmap[200][200],Mmap[20][20];
+    char Nmap[500][500],Mmap[50][50];
     scanf("%d",&N);
     getchar();
     for(int i=0;i<N;i++){
@@ -28,7 +28,7 @@ int main(void){
                     }
                 }
             }
-        next:;    
+        next:;
         }
     }
 end:
