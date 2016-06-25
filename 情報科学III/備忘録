@@ -1,0 +1,22 @@
+ssh ds113193t@rupus.i.kyushu-u.ac.jp
+19930522
+scp ファイル名 ds113193t@rupus.i.kyushu-u.ac.jp:~/public_html
+
+http://rupus.i.kyushu-u.ac.jp/~ds113193t/
+
+mysql --user=ds113193t -p
+19930522
+		
+//テーブル作成		
+CREATE DATABASE ds113193t_データベース名;
+use	ds113193t_データベース名;
+CREATE TABLE テーブル名;
+
+show tables;
+show columns from テーブル名;
+
+//テーブル削除
+drop table テーブル名;
+
+//警告の詳細を表示
+show warnings;

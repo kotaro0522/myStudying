@@ -1,0 +1,11 @@
+AuthType Basic
+AuthName "Address Book Sample"
+AuthUserFile /home/ds113193t/public_html/address_book/.htpass
+Require valid-user
+
+<Files *.inc>
+order deny,allow 
+
+deny from all 
+
+</Files>

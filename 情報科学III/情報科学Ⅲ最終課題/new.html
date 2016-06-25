@@ -1,0 +1,38 @@
+<!doctype html>
+<HTML lang="ja">
+	<HEAD>
+		<meta charset="utf-8">
+		<TITLE>レコードの新規登録</TITLE>
+		
+		<script type="text/javascript">
+		function check(){
+		
+			if(window.confirm('登録してよろしいですか？')){ // 確認ダイアログを表示
+				return true; // 「OK」時は送信を実行
+			}
+			
+			else{ // 「キャンセル」時の処理
+				window.alert('キャンセルされました'); // 警告ダイアログを表示
+				return false; // 送信を中止
+			}
+		}
+		</script>
+		
+	</HEAD>
+	<BODY>
+		<FORM ACTION="new.php" METHOD="POST" onSubmit="return check()">
+			名前を入力してください。<BR>
+			<INPUT TYPE="TEXT" NAME="name" VALUE="田中太郎"><BR>
+			郵便番号を入力してください。<BR>
+			<INPUT TYPE="TEXT" NAME="postal_code" VALUE="106-0032"><BR>
+			住所1を入力してください。<BR>
+			<INPUT TYPE="TEXT" NAME="address1" VALUE="東京都港区六本木６−１０−１"><BR>
+			住所2を入力してください。<BR>
+			<INPUT TYPE="TEXT" NAME="address2" VALUE="六本木ヒルズ"><BR>
+			電話番号を入力してください。<BR>
+			<INPUT TYPE="TEXT" NAME="phone" VALUE="090-abcd-efgh"><BR>
+			<INPUT TYPE="SUBMIT" NAME="submit" VALUE="OK">
+			<INPUT TYPE="RESET" NAME="reset" VALUE="リセット">
+		</FORM>
+	</BODY>
+</HTML>

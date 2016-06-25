@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KU Design</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript">
+<!--
+function getPoint(ev){
+    window.document.pointInput.pointX.value = ev.clientX + "px";
+    window.document.pointInput.pointY.value = ev.clientY + "px";;
+}
+function showDesc(){
+    d = window.document.getElementById("description");
+    d.style.top = window.document.pointInput.pointY.value;
+    d.style.left = window.document.pointInput.pointX.value;
+    d.innerHTML = window.document.pointInput.desc.value;
+}
+// -->
+</script>
+</head>
+<body>
+<img id="map" src="kd.jpg" onClick="getPoint(event)">
+<div id="description" style="position:absolute;color:red"></div>
+<form name="pointInput" action="" method="post">
+X座標<input name="pointX" type="text" size="5" maxlength="5">
+Y座標<input name="pointY" type="text" size="5" maxlength="5">
+説明<input name="desc" type="text" size="10" maxlength="10">
+<input name="show" type="button" value="表示" onClick="showDesc()">
+</form>
+</body>
+</html>

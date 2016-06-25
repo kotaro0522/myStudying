@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>my cal</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script type="text/javascript">
+<!--
+function plusAns() {
+   window.document.cal.ans.value = parseInt(window.document.cal.in1.value) + parseInt(window.document.cal.in2.value);
+}
+function minusAns() {
+  window.document.cal.ans.value =
+  parseInt(window.document.cal.in1.value) - parseInt(window.document.cal.in2.value);
+}
+function answer() {
+   opType = window.document.cal.op.value;
+   if ( opType == "plus") {
+ 　 plusAns();
+   }
+   else if ( opType == "minus") {
+     minusAns();
+   }
+}
+// -->
+</script>
+</head>
+<body>
+<form name="cal">
+<input name="in1" type="text" value="" size="1" maxlength="1">
+<select name="op">
+<option value="plus">+</option>
+<option value="minus">-</option>
+</select>
+<input name="in2" type="text" value="" size="1" maxlength="1">
+=
+<input name="ans" type="text" value="" size="2" maxlength="2">
+</form>
+<input type="button" value="計算" onClick="answer()">
+</body>
+</html>

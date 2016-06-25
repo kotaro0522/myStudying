@@ -1,0 +1,10 @@
+atom覚え書き
+
+ctr-shift-左右 タブ移動
+ctr-shift-h html preview
+ctr-alt-上下左右 terminal
+cmd-i run script
+cmd-shift-p コマンドパレット
+cmd-k 上下左右 split
+cmd-k cmd-上下左右 split移動
+ターミナルで "atom ." そのディレクトリをatomで開く
